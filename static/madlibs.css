@@ -1,0 +1,19 @@
+/* BODY - font-family, size , background-color,
+<p> / <page> / <form> text color (each paragraph a diff color)  */
+head {
+    color: Red;
+}
+
+body { 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    background-color: aquamarine;
+}
+
+p {
+    color: rgb(54, 57, 212);
+}
+
+label {
+    color: rgb(255, 153, 0);
+}

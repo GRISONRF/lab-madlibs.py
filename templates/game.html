@@ -2,24 +2,49 @@
 <html>
 <head>
   <title>Game.</title>
+  <link rel="stylesheet" href="/static/madlibs.css">
 </head>
 <body>
     Hi {{ person }}! I think you're {{ compliment }}! 
     <form
       action = '/madlib'>
 
-      <p>Pick a person:</p>
+      <!-- checkbox -->
+      <p>Pick one person:</p>
+      <!--checked="checked" ("input[type='checkbox']").prop({disabled: true})-->
       <input type="checkbox" name="person" value="mary">
-      <label>mary</label>
+      <label>Mary</label>
       <input type="checkbox" name="person" value="john">
-      <label>john</label>
+      <label>John</label>
       <input type="checkbox" name="person" value="paul">
-      <label>paul</label>
+      <label>Paul</label>
 
-      <p>Pick a color:<input type= "text" name="color"></p>
+      <!-- dropdown -->
+      <p>Pick a color:<select name="color"></p>
+         <option value="red">Red</option>
+         <option value="green">Green</option>
+      </select>
+
+      <!-- text -->
       <p>Pick a noun :<input type= "text" name="noun"></p>
-      <p>Pick an adjective:<input type= "text" name="adjective"></p>
+
+      <!-- radio input -->
+      <p>Pick an adjective: </p>
+       
+      <input type= "radio" name="adjective" value="pretty">
+      <label> Pretty </label>
+      <input type= "radio" name="adjective" value="smart">
+      <label> Smart</label>
+      <input type= "radio" name="adjective" value="funny">
+      <label> Funny </label>
+      <input type= "radio" name="adjective" value="stinky">
+      <label> Stinky </label>
+
+      <br>
+      <br>
+
+
       <input type="submit">
     </form>
 </body>
-</html>
+</html> 

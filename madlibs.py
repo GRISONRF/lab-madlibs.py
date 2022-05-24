@@ -72,7 +72,11 @@ def show_madlib():
 
     #if person value is igual to "mary"
 
-    return render_template("madlib.html", person=person, color=color, noun=noun, adjective=adjective)
+
+    var = choice(['random1.html', 'random2.html', 'random3.html', 'random4.html'])
+
+
+    return render_template(var, person=person, color=color, noun=noun, adjective=adjective)
 
 
 
