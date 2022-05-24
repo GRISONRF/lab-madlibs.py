@@ -7,7 +7,15 @@
     Hi {{ person }}! I think you're {{ compliment }}! 
     <form
       action = '/madlib'>
-      <p>Pick a person:<input type= "text" name="person"></p>
+
+      <p>Pick a person:</p>
+      <input type="checkbox" name="person" value="mary">
+      <label>mary</label>
+      <input type="checkbox" name="person" value="john">
+      <label>john</label>
+      <input type="checkbox" name="person" value="paul">
+      <label>paul</label>
+
       <p>Pick a color:<input type= "text" name="color"></p>
       <p>Pick a noun :<input type= "text" name="noun"></p>
       <p>Pick an adjective:<input type= "text" name="adjective"></p>
